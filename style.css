@@ -1,0 +1,124 @@
+:root{
+    --primary-color: #00FFFF;
+}
+/*Navbar CSS */
+.navbar{
+  position: relative;
+  display: flex;
+  bottom: 10px;
+  justify-content: center;
+  font-weight: bold;  
+  gap: 150px;
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% transparency */
+  padding: 20px;
+  padding-top: 50px;
+  z-index: 3;
+}
+.navbar-logo{
+  font-size: 30px;
+  color: white;
+}
+.navbar-button{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+.navbar-button:hover,.navbar-logo:hover{
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness here */
+  z-index: 2;
+}
+.homepage-wallpaper{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+
+}
+.content-container{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 2;
+}
+.homepage-greating{
+  color: var(--primary-color);
+  font-size: 50px;
+}
+.homepage-content{
+  font-size: 30px;
+  color: white;
+}
+
+/*About Section*/
+.aboutMe-section{
+  position: relative;
+  margin-top: 1000px;
+  margin-bottom: 500px;
+}
+.profile-picture{
+  position: relative;
+  top: 50px;
+  left: 200px;
+  height: 600px;
+  border: 10px solid var(--primary-color);
+  border-radius: 500px;
+}
+.about-container{
+  position: absolute;
+  top: 100px;
+  left: 950px;
+  font-size: 30px;
+}
+.about-heading{
+  color: var(--primary-color);
+}
+.about-content{
+  width: 800px;
+}
+
+/*skills section*/
+.skills-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 500px;
+}
+.skills-heading{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+.skills-container{
+  border: 5px solid var(--primary-color);
+  border-radius: 20px;
+  height: 600px;
+  width: 1400px;
+}
+.skills-grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* space between items */
+  padding: 10px;
+}
+.skills-item-container{
+  background-color: #3498db;
+  height: 100px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
