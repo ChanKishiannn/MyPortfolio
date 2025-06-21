@@ -3,9 +3,10 @@
 }
 /*Navbar CSS */
 .navbar{
-  position: relative;
+  position:fixed;
   display: flex;
-  bottom: 10px;
+  top: 1px;
+  width: 2000px;
   justify-content: center;
   font-weight: bold;  
   gap: 150px;
@@ -17,6 +18,7 @@
 .navbar-logo{
   font-size: 30px;
   color: white;
+  text-decoration: none;
 }
 .navbar-button{
   text-decoration: none;
@@ -101,24 +103,102 @@
   display: flex;
   font-size: 50px;
   justify-content: center;
+  color: var(--primary-color);
 }
 .skills-container{
   border: 5px solid var(--primary-color);
   border-radius: 20px;
-  height: 600px;
-  width: 1400px;
+  height: 1200px;
+  width: 1500px;
 }
-.skills-grid-container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 10px; /* space between items */
-  padding: 10px;
+.soft-skills-container{
+  margin-bottom: 50px;
 }
-.skills-item-container{
-  background-color: #3498db;
-  height: 100px;
+.soft-skills-box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  left: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+.soft-skills-heading{
   color: white;
-  padding: 20px;
+}
+.soft-skills-item{
+  position: relative;
+  display: grid;
+  left: 20px;
+  top: 30px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+}
+.soft-skills-item-box{
+  display: flex;
+  width: 280px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+.soft-skills-item-box:hover{
+  width: 300px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+.soft-skills{
+  display: flex;
+  font-weight: normal;
   text-align: center;
-  border-radius: 8px;
+}
+.technical-skills-box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  left: 10px;
+  width: 300px;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+.technical-skills-heading{
+  color: white;
+}
+.technical-skills-container{
+  position: relative;
+  display: grid;
+  padding-right: 100px;
+  padding-left: 100px;
+  gap: 50px;
+  top: 30px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+}
+.skills-icon{
+  position: relative;
+  font-size: 100px;
+  margin: 50px;
+}
+.technical-skills-item-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.technical-skills-item-box span{
+  font-size: 25px;
+}
+.technical-skills-item-box:hover{
+  border-radius: 20px;
+  background-color: white;
+  color: var(--primary-color);
+  border: 5px solid var(--primary-color);
 }
