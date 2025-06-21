@@ -27,6 +27,7 @@
 }
 .navbar-button:hover,.navbar-logo:hover{
     color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Hero Section */
@@ -69,7 +70,7 @@
 .aboutMe-section{
   position: relative;
   margin-top: 1000px;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 .profile-picture{
   position: relative;
@@ -97,7 +98,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 .skills-heading{
   display: flex;
@@ -202,3 +203,51 @@
   color: var(--primary-color);
   border: 5px solid var(--primary-color);
 }
+.project-heading-container{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--primary-color);
+  }
+  .project-item-container{
+    display: grid;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 50px;
+  }
+  .project-item{
+    cursor: pointer;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background-color: var(--primary-color);
+  }
+  .project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    overflow: hidden;
+  }
+  .project-image{
+    width: 430px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  .project-content{
+    position: relative;
+    top: 20px;
+  }
+   .project-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-discription{
+    position: relative;
+    font-size: 18px;
+    margin: 30px;
+  }
