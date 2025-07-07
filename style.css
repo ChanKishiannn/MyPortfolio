@@ -1,5 +1,6 @@
 :root{
     --primary-color: #00FFFF;
+    --secondary-color: #ffffff;
 }
 /*Navbar CSS */
 .navbar{
@@ -17,24 +18,32 @@
 }
 .navbar-logo{
   font-size: 30px;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 .navbar-button{
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: var(--secondary-color)
 }
 .navbar-button:hover,.navbar-logo:hover{
     color: var(--primary-color);
     text-decoration: underline;
 }
+@media (max-width: 1700px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 1610px;
+  }
+}
+
 
 /* Hero Section */
 .hero-section{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 99.5%;
 }
 .hero-section::before {
   content: "";
@@ -63,8 +72,14 @@
 }
 .homepage-content{
   font-size: 30px;
-  color: white;
+  color: var(--secondary-color);
 }
+@media (max-width: 1700px) {
+  .hero-section {
+    width: 1655px;
+  }
+}
+
 
 /*About Section*/
 .aboutMe-section{
@@ -91,6 +106,24 @@
 }
 .about-content{
   width: 800px;
+}
+@media (max-width: 1700px) {
+  .aboutMe-section{
+    position: relative;
+    right: 100px;
+  }
+  .profile-picture {
+    height: 500px;
+    left: 280px;
+  }
+  .about-heading{
+    position: relative;
+    right: 100px;
+  }
+  .about-content{
+    position: relative;
+    right: 100px;
+  }
 }
 
 /*skills section*/
@@ -127,7 +160,7 @@
   background-color: var(--primary-color);
 }
 .soft-skills-heading{
-  color: white;
+  color: var(--secondary-color);
 }
 .soft-skills-item{
   position: relative;
@@ -147,7 +180,7 @@
 }
 .soft-skills-item-box:hover{
   width: 300px;
-  color: white;
+  color: var(--secondary-color);
   font-size: 25px;
   font-weight: bold;
   background-color: var(--primary-color);
@@ -169,7 +202,7 @@
   background-color: var(--primary-color);
 }
 .technical-skills-heading{
-  color: white;
+  color: var(--secondary-color);
 }
 .technical-skills-container{
   position: relative;
@@ -199,10 +232,12 @@
 }
 .technical-skills-item-box:hover{
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   border: 5px solid var(--primary-color);
 }
+
+/* Project Section */
 .project-heading-container{
   display: flex;
   justify-content: center;
@@ -251,3 +286,10 @@
     font-size: 18px;
     margin: 30px;
   }
+  @media (max-width: 1700px) {
+  .project-item-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
