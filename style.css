@@ -7,7 +7,7 @@
   position:fixed;
   display: flex;
   top: 1px;
-  width: 2000px;
+  width: 100%;
   justify-content: center;
   font-weight: bold;  
   gap: 150px;
@@ -30,11 +30,47 @@
     color: var(--primary-color);
     text-decoration: underline;
 }
-@media (max-width: 1700px) {
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 60px;
+    right: 200px;
+  }
+  .navbar-button{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-button{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
   .navbar {
     display: flex;
     justify-content: center;
-    width: 1610px;
+    width: 100%;
+    right: 200px;
+  }
+  .navbar-button{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -43,7 +79,7 @@
 .hero-section{
   position: absolute;
   top: 0;
-  width: 99.5%;
+  width: 100%;
 }
 .hero-section::before {
   content: "";
@@ -62,7 +98,7 @@
 }
 .content-container{
   position: absolute;
-  top: 50%;
+  top: 100px;
   left: 10%;
   z-index: 2;
 }
@@ -74,11 +110,42 @@
   font-size: 30px;
   color: var(--secondary-color);
 }
-@media (max-width: 1700px) {
-  .hero-section {
-    width: 1655px;
+@media (min-width: 300px) {
+  #home{
+    width: 470px;
+  }
+  .homepage-wallpaper {
+    width: 470px;
+    height: 500px;
+  }
+  .content-container{
+    width: 350px;
+    margin-top: 120px;
+  }
+  .homepage-greating{
+    font-size: 40px;
+  }
+  .homepage-content{
+    font-size: 20px;
   }
 }
+@media (min-width: 800px) {
+  .homepage-wallpaper {
+    height: 500px;
+    width: 475px;
+  }
+  .content-container{
+    width: 500px;
+    margin-top: 475px;
+  }
+  .homepage-greating{
+    font-size: 40px;
+  }
+  .homepage-content{
+    font-size: 20px;
+  }
+}
+
 
 
 /*About Section*/
@@ -107,7 +174,27 @@
 .about-content{
   width: 800px;
 }
+/* Medium Size Laptop Screen */
 @media (max-width: 1700px) {
+  .aboutMe-section{
+    position: relative;
+    right: 100px;
+  }
+  .profile-picture {
+    height: 500px;
+    left: 280px;
+  }
+  .about-heading{
+    position: relative;
+    right: 100px;
+  }
+  .about-content{
+    position: relative;
+    right: 100px;
+  }
+}
+/* Small Size Laptop Screen */
+@media (max-width: 1200px) {
   .aboutMe-section{
     position: relative;
     right: 100px;
