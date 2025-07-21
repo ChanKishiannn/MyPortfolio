@@ -110,40 +110,43 @@
   font-size: 30px;
   color: var(--secondary-color);
 }
-@media (min-width: 300px) {
+
+
+@media (max-width: 480px) {
   #home{
-    width: 470px;
+    width: 480px;
+    height: 700px;
   }
   .homepage-wallpaper {
-    width: 470px;
-    height: 500px;
+    height: 700px;
   }
   .content-container{
-    width: 350px;
-    margin-top: 120px;
-  }
-  .homepage-greating{
-    font-size: 40px;
-  }
-  .homepage-content{
-    font-size: 20px;
-  }
-}
-@media (min-width: 800px) {
-  .homepage-wallpaper {
-    height: 500px;
-    width: 475px;
-  }
-  .content-container{
-    width: 500px;
+    width: 300px;
     margin-top: 475px;
   }
   .homepage-greating{
-    font-size: 40px;
+    font-size: 50px;
+    position: relative;
+    bottom: 300px;
   }
   .homepage-content{
     font-size: 20px;
+    position: relative;
+    bottom: 300px;
   }
+@media (max-width: 800px) {
+  .homepage-wallpaper {
+    width: 800px;
+  }
+  .homepage-greating{
+    position: relative;
+    top: 300px;
+  }
+  .homepage-content{
+    position: relative;
+    top: 300px;
+  }
+}
 }
 
 
