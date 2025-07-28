@@ -111,42 +111,24 @@
   color: var(--secondary-color);
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   #home{
-    width: 480px;
-    height: 700px;
+    width: 1024px;
+    height: 1000px;
   }
   .homepage-wallpaper {
-    height: 700px;
+    height: 1000px;
   }
   .content-container{
-    width: 300px;
-    margin-top: 475px;
+    width: 500px;
+    top: 500px;
   }
   .homepage-greating{
     font-size: 50px;
-    position: relative;
-    bottom: 300px;
   }
   .homepage-content{
-    font-size: 20px;
-    position: relative;
-    bottom: 300px;
+    font-size: 30px;
   }
-@media (max-width: 800px) {
-  .homepage-wallpaper {
-    width: 800px;
-  }
-  .homepage-greating{
-    position: relative;
-    top: 300px;
-  }
-  .homepage-content{
-    position: relative;
-    top: 300px;
-  }
-}
 }
 
 
@@ -178,41 +160,38 @@
   width: 800px;
 }
 /* Medium Size Laptop Screen */
-@media (max-width: 1700px) {
+@media (max-width: 1024px) {
   .aboutMe-section{
     position: relative;
-    right: 100px;
+    display: grid;
+    right: 200px;
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    top: 200px;
+    margin-bottom: 500px;
   }
   .profile-picture {
     height: 500px;
-    left: 280px;
+    position: relative;
+    display: flex;
+    justify-self: center;
+  }
+  .about-container{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-self: center;
   }
   .about-heading{
-    position: relative;
-    right: 100px;
+    position: absolute;
+    right: 500px;
+    width: 400px;
   }
   .about-content{
-    position: relative;
-    right: 100px;
-  }
-}
-/* Small Size Laptop Screen */
-@media (max-width: 1200px) {
-  .aboutMe-section{
-    position: relative;
-    right: 100px;
-  }
-  .profile-picture {
-    height: 500px;
-    left: 280px;
-  }
-  .about-heading{
-    position: relative;
-    right: 100px;
-  }
-  .about-content{
-    position: relative;
-    right: 100px;
+    position: absolute;
+    top: 100px;
+    width: 700px;
+    right: 400px;
+    justify-self: center;
   }
 }
 
