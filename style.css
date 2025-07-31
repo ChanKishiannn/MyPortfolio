@@ -79,7 +79,7 @@
 .hero-section{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 1896px;
 }
 .hero-section::before {
   content: "";
@@ -92,7 +92,7 @@
 .homepage-wallpaper{
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 1896px;
   height: 100vh;
 
 }
@@ -113,10 +113,11 @@
 
 @media (max-width: 1024px) {
   #home{
-    width: 1024px;
+    width: 1400px;
     height: 1000px;
   }
   .homepage-wallpaper {
+    width: 1400px;
     height: 1000px;
   }
   .content-container{
@@ -160,37 +161,39 @@
   width: 800px;
 }
 /* Medium Size Laptop Screen */
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .aboutMe-section{
     position: relative;
     display: grid;
-    right: 200px;
-    grid-template-rows: 1fr 1fr; /* Two rows */
-    top: 200px;
-    margin-bottom: 500px;
+    width: 100px;
+    justify-content: center;
+    top: 100px;
+    margin-bottom: 800px;
   }
   .profile-picture {
     height: 500px;
     position: relative;
     display: flex;
-    justify-self: center;
+    left: 350px;
   }
   .about-container{
     position: relative;
     top: 100px;
-    display: flex;
-    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows */
   }
   .about-heading{
     position: absolute;
-    right: 500px;
-    width: 400px;
+    top: 10px;
+    width: 700px;
+    right: 300px;
+    justify-self: center;
   }
   .about-content{
     position: absolute;
     top: 100px;
     width: 700px;
-    right: 400px;
+    right: 480px;
     justify-self: center;
   }
 }
