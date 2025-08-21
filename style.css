@@ -106,16 +106,15 @@ body{
 
 /* if screen is narrow, center the content instead of left-align */
 @media (max-width: 768px){
-  .content-container{
-    left: 0;  /* stays near the left like desktop */
+  .content-container{ 
     transform: none;            /* don’t shift it */
     top: 30vh;
-    text-align: left;           /* keep text left aligned */
-    max-width: 92%;
-    padding: 0 185px;
+    text-align: start;           /* keep text left aligned */
+    max-width: 50%;
+    padding: 0 150px;
   }
   .homepage-greating{ font-size: clamp(22px, 7vw, 36px); }
-  .homepage-content{ font-size: clamp(15px, 3.5vw, 18px); width: 420px; }
+  .homepage-content{ font-size: clamp(15px, 3.5vw, 80px);}
 }
 
 /* make hero slightly shorter on very small screens so text fits */
@@ -265,7 +264,8 @@ body{
 @media (max-width: 480px){
   .navbar{ padding: 10px 12px; gap: 8px; }
   .content-container{ top: 68vh; left: 10%; transform: translateX(-50%); }
-  .homepage-greating{ font-size: clamp(24px, 10vw, 28px); }
+  .homepage-greating{ position:relative; right: 20px; font-size: clamp(24px, 10vw, 28px); }
+  .homepage-content{ position:relative; right: 20px; font-size: clamp(15px, 10vw, 10px); width: 380px;}
   .profile-picture{ width: min(240px, 60vw); }
   .technical-skills-item-box{ min-height: 180px; padding: 0.8rem; }
   .project-image{ height:150px; }
