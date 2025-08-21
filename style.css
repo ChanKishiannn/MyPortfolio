@@ -85,7 +85,7 @@ body{
   position: absolute;
   z-index: 2;
   left: clamp(3%, 6vw, 10%);       /* roughly left: 10% on desktop, smaller on mobile */
-  top: 18vh;                       /* keeps text vertically placed similar to original */
+  top: 50vh;                       /* keeps text vertically placed similar to original */
   max-width: clamp(320px, 40%, 560px);
   color: var(--secondary-color);
 }
@@ -93,24 +93,26 @@ body{
 /* typography */
 .homepage-greating{
   color: var(--primary-color);
-  font-size: clamp(28px, 5vw, 50px); /* scales from phone -> large screens */
+  font-size: clamp(70px, 5vw, 50px); /* scales from phone -> large screens */
   line-height: 1.05;
+  width: 700px;
 }
 .homepage-content{
   font-size: clamp(14px, 2.4vw, 30px);
   color: var(--secondary-color);
   margin-top: 0.6rem;
+  width: 700px;
 }
 
 /* if screen is narrow, center the content instead of left-align */
 @media (max-width: 768px){
   .content-container{
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;  /* stays near the left like desktop */
+    transform: none;            /* don’t shift it */
     top: 30vh;
-    text-align: center;
+    text-align: left;           /* keep text left aligned */
     max-width: 92%;
-    padding: 0 12px;
+    padding: 0 200px;
   }
   .homepage-greating{ font-size: clamp(22px, 7vw, 36px); }
   .homepage-content{ font-size: clamp(13px, 3.5vw, 18px); }
@@ -262,8 +264,8 @@ body{
 /* ===== Small screen tweaks ===== */
 @media (max-width: 480px){
   .navbar{ padding: 10px 12px; gap: 8px; }
-  .content-container{ top: 28vh; left: 50%; transform: translateX(-50%); }
-  .homepage-greating{ font-size: clamp(18px, 7vw, 28px); }
+  .content-container{ top: 68vh; left: 10%; transform: translateX(-50%); }
+  .homepage-greating{ font-size: clamp(24px, 7vw, 28px); }
   .profile-picture{ width: min(240px, 60vw); }
   .technical-skills-item-box{ min-height: 180px; padding: 0.8rem; }
   .project-image{ height:150px; }
