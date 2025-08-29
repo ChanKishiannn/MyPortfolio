@@ -77,7 +77,7 @@ body{
   background-color: white;
 }
 /* Mobile / small tablet navbar: stack items if needed */
-@media (max-width: 720px){
+@media (max-width: 900px){
   .navbar-logo{
     position: relative;
     right: 100px;
@@ -177,11 +177,10 @@ body{
 /* if screen is narrow, center the content instead of left-align */
 @media (max-width: 768px){
   .content-container{ 
-    transform: none;            /* don’t shift it */
-    top: 30vh;
+    top: 70vh;
     text-align: start;           /* keep text left aligned */
     max-width: 50%;
-    padding: 0 150px;
+    padding: 0 10px;
   }
   .homepage-greating{ font-size: clamp(22px, 7vw, 36px); }
   .homepage-content{ font-size: clamp(15px, 3.5vw, 80px);}
@@ -337,11 +336,36 @@ body{
 
 /* ===== Small screen tweaks ===== */
 @media (max-width: 480px){
-  .navbar{ padding: 10px 12px; gap: 8px; }
-  .content-container{ top: 68vh; left: 10%; transform: translateX(-50%); }
-  .homepage-greating{ position:relative; right: 20px; font-size: clamp(24px, 10vw, 28px); }
-  .homepage-content{ position:relative; right: 20px; font-size: clamp(15px, 10vw, 10px); width: 380px;}
-  .profile-picture{ width: min(240px, 60vw); }
-  .technical-skills-item-box{ min-height: 180px; padding: 0.8rem; }
-  .project-image{ height:150px; }
+  .navbar{
+    padding: 10px 12px; gap: 8px;
+   }
+  .content-container{
+    text-align: start;           /* keep text left aligned */
+    max-width: 50%;
+    padding: 0 250px;
+    top: 68vh;
+    left: 10%;
+    transform: translateX(-50%);
+   }
+  .homepage-greating{
+    position:relative;
+    right: 20px; 
+    font-size: clamp(24px, 10vw, 28px); 
+  }
+  .homepage-content{ 
+    position:relative; 
+    right: 20px; 
+    font-size: clamp(15px, 10vw, 10px); 
+    width: 380px;
+  }
+  .profile-picture{ 
+    width: min(240px, 60vw); 
+  }
+  .technical-skills-item-box{ 
+  min-height: 180px; 
+  padding: 0.8rem; 
+}
+  .project-image{ 
+    height:150px; 
+  }
 }
