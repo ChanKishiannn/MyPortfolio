@@ -78,6 +78,10 @@ body{
 }
 /* Mobile / small tablet navbar: stack items if needed */
 @media (max-width: 720px){
+  .navbar-logo{
+    position: relative;
+    right: 100px;
+  }
   .nav-menu {
     position: fixed;
     top: 70px;
