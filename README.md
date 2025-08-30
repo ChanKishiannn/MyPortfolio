@@ -10,5 +10,5 @@ This project showcases my skills, projects, and experiences as a developer. It s
 - **Contact Information** – easy way to get in touch  
 
 ## 🛠️ Built With  
-- **:** HTML, CSS, JavaScript
+- **Tools I Use:** HTML, CSS, JavaScript
 - **Deployment:** GitHub Pages
