@@ -1,16 +1,14 @@
-## Hi there 👋
+# 🌐 My Online Portfolio  
 
-<!--
-**ChanKishiannn/chankishiannn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my personal portfolio!  
+This project showcases my skills, projects, and experiences as a developer. It serves as my digital resume where I share my work and growth journey.  
 
-Here are some ideas to get you started:
+## 🚀 Features  
+- **About Me** section – learn more about who I am  
+- **Projects Showcase** – highlights of my best work  
+- **Skills & Tools** – programming languages, frameworks, and tools I use  
+- **Contact Information** – easy way to get in touch  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Built With  
+- **:** HTML, CSS, JavaScript
+- **Deployment:** GitHub Pages
